@@ -157,7 +157,7 @@ function ConnectWallet(props) {
             setAddress(null);
             showMessage({
               type: "error",
-              title: "链接钱包失败，请重试",
+              title: "链接钱包失败，请切换网络重试",
               body: err.message,
             });
           }
