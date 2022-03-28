@@ -175,7 +175,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  	    LHHS-NFT
+			  	    LHH$-NFT
 			  	  </Typography>
 			  		<Typography
 			  		  variant="h2" 
@@ -186,9 +186,20 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		  一张印象派通往财富的PASS
+			  		  4月1日不见不散
 			  		</Typography>
-			  		<Typography
+					  <Typography
+			  		  variant="body1" 
+			  		  style={{
+			  			  fontSize: `13px`,
+			  			  fontWeight: 500,
+			  			}} 
+			  			component="div" 
+			  			gutterBottom>
+			  		   我们并不喜欢称呼自己为项目方，因为那不够亲切，我们希望通过这次能和大家成为一生的朋友；不，您是我们的再生父母！
+			  		</Typography>
+			  		<br/>
+					  <Typography
 			  		  variant="body1" 
 			  		  style={{
 			  			  fontSize: `16px`,
@@ -196,7 +207,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		  Mint｜周边｜代币空投｜线下权益
+			  		  纯国产，英文水平有限，所以不提供英文版。<br/>Made in China,We English level is limited, so the English version is not available
 			  		</Typography>
 			  		<Mint />
 			  		<Typography
@@ -208,9 +219,9 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		  <Tooltip title="官方 OpenSea">
+			  		 <Tooltip title="官方 OpenSea">
 			  		    <a
-			  		      href="https://opensea.io/collection/gclx"
+			  		      href="#"
 			  		      target="_blank"
 			  		      rel="noreferrer"
 			  		    >
@@ -248,7 +259,7 @@ function Default() {
 						    <MenuItem elementId="peek">SNEAK-PEEK</MenuItem>
 						    <MenuItem elementId="ask">Q&A</MenuItem>
 						    <MenuItem elementId="team">Team</MenuItem>
-								<MenuItem elementId="next">Next</MenuItem>
+								<MenuItem elementId="next">Roadmap</MenuItem>
 						  </MenuWrapper>
 			  		</ListBoxHeadMenu>
 			  		<ListBoxHeadWallet>

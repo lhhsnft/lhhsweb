@@ -206,7 +206,7 @@ function MintSection() {
     );
   }
 
-  if (progress >= 5000 || status === "2") {
+  if (progress >= 6666 || status === "2") {
     mintButton = (
       <StyledMintButton
         style={{
@@ -248,7 +248,7 @@ function MintSection() {
     );
   }
 
-  /*mintButton = (
+  mintButton = (
     <StyledMintButton
       style={{
         background: "#eee",
@@ -256,9 +256,9 @@ function MintSection() {
         cursor: "not-allowed",
       }}
     ><MintIcon />
-      全部卖完了
+      4月1日10点发射
     </StyledMintButton>
-  );*/
+  );
 	
 	let ButtonList = styled.div`
 	  margin-bottom: 20px;
@@ -280,17 +280,17 @@ function MintSection() {
         <ConnectWallet />
 				{mintButton}
       </ButtonList>
-      <div style={{ marginTop: 20, fontSize: 13, color: `#2f80ed`}}>
-        {progress === null ? "" : `铸造进度：` + progress + `/ 1000`}
+      <div style={{ marginTop: 5, fontSize: 20, color: `#2f80ed`}}>
+        {progress === null ? "" : `铸造进度：` + progress + `/ 6666`}
       </div>
-			<div style={{ marginTop: 20, fontSize: 13}}>
+			<div style={{ marginTop: 20, fontSize: 15}}>
 			  {" "}
 			  {fullAddress && (
 			    <span>
-			      你可以铸造 {2 - numberMinted} 个，
+			      您可以铸造 {2 - numberMinted} 个，
 			    </span>
 			  )}
-				价格 0.0066 ETH / 枚，最多mint两枚。
+				定价0.0066 E/只，最多mint两只。
 			</div>
     </div>
   );
@@ -302,7 +302,7 @@ function Mint() {
       <Content>
         <div
           style={{
-            marginTop: 60
+            marginTop: 20
           }}
         >
           <MintSection />

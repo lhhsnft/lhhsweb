@@ -25,10 +25,14 @@ const SnekContent = styled.div`
 `;
 
 const peekData = [
-	{name: "作品1", img: "/peek/1.jpg", url: "#"},
-	{name: "作品2", img: "/peek/2.png", url: "#"},
-	{name: "作品3", img: "/peek/3.png", url: "#"},
-	{name: "作品4", img: "/peek/4.jpeg", url: "#"}
+	{name: "作品1", img: "/peek/1.jpg", },
+	{name: "作品2", img: "/peek/2.png", },
+	{name: "作品1", img: "/peek/3.png", },
+	{name: "作品2", img: "/peek/4.jpeg", },
+	{name: "作品1", img: "/peek/5.jpeg", },
+	{name: "作品2", img: "/peek/6.png", },
+	{name: "作品3", img: "/peek/7.png", },
+	{name: "作品4", img: "/peek/8.png",}
 ];
 
 function Peek() {

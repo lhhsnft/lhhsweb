@@ -98,22 +98,22 @@ function Team() {
 			</BoxTitle>
 			<BoxContent>
 			  <TeamMember
-			    img="/one/bruce.jpg"
-			    name="Laoyan"
-			    role="项目发起人 / 摄影爱好者 / 合约工程师"
-			    description="以前擅长在 Web3 要饭、舔白，现在翻身做项目方！"
+			    img="/one/dong.jpg"
+			    name="Judy Dong"
+			    role="项目发起人 / web3爱好者 / 老韭菜一枚"
+			    description="从舔狗到舔白，这是岁月的痕迹！"
 			    twitterLink="https://twitter.com/mzbzcl"
 			  />
 			  <TeamMember
-			    img="/one/muxin.jpg"
-			    name="Wosinkong"
-			    role="企业CEO / 多年经验程序员 / Web3乞丐"
+			    img="/one/wsk.png"
+			    name="Nonga"
+			    role="大厂离职设计师 / 艺术创业者 / web3实践中"
 			    description={
 			      <div>
-			        以前擅长在 Web3 要饭、舔白，现在翻身做项目方！
+			        比特币钻石手，从10u持仓到现在，不关注币圈动态，只做btc信徒！最近入坑eth
 			      </div>
 			    }
-			    twitterLink="https://twitter.com/alphabat"
+			    twitterLink="https://twitter.com/lhhsnft"
 			  />
 			</BoxContent>
 		</Box>
