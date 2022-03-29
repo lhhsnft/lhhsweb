@@ -14,16 +14,16 @@ const Container = styled.div`
 export default function Home() {
   useEffect(() => {
     if (window.console) {
-	  console.log(`\n %c 您好，欢迎访问“灵魂画手”！ \n\n`, 'color: #ffffff; background: #f56c6c; padding:5px 0;');
-	  console.log(`\n %c NFT开源项目： %c   https://github.com/brucexu-eth/gclx-official \n\n`, 'color: #ffffff; background: #3c9cff; padding:5px 0;', 'color: #3c9cff;background: #ffffff; padding:5px 0;');
+	  console.log(`\n %c 您好，欢迎访问“lhhs”！ \n\n`, 'color: #ffffff; background: #f56c6c; padding:5px 0;');
+	  console.log(`\n %c 感谢国产良心NFT开源项目支持： %c   https://github.com/brucexu-eth/gclx-official \n\n`, 'color: #ffffff; background: #3c9cff; padding:5px 0;', 'color: #3c9cff;background: #ffffff; padding:5px 0;');
     }
   }, []);
 
   return (
     <Container>
       <Head>
-        <title>LHHS NFT - 印象派灵魂画手！</title>
-        <meta name="description" content="中国人不骗中国人，放心！" />
+        <title>LHHS NFT - come soon！</title>
+        <meta name="description" content="他们说：这世间没有什么事是不可能的，你们说呢？" />
         <link rel="icon" href="/favicon.png" />
 
         {/* Global Site Tag (gtag.js) - Google Analytics */}
