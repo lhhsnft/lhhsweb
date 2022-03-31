@@ -256,7 +256,7 @@ function MintSection() {
         cursor: "not-allowed",
       }}
     ><MintIcon />
-      4月5日10点发射
+      coming soon
     </StyledMintButton>
   );
 	
