@@ -100,14 +100,14 @@ function Team() {
 			  <TeamMember
 			    img="/one/dong.jpg"
 			    name="Judy Dong"
-			    role="项目发起人 / web3爱好者 / 老韭菜一枚"
-			    description="从舔狗到舔白，这是岁月的痕迹！"
+			    role="项目发起人 / web3爱好者 / 非著名贴吧喷子 / 老韭菜一枚"
+			    description="你护我，我护你，who怕护！"
 			    twitterLink="https://twitter.com/mzbzcl"
 			  />
 			  <TeamMember
-			    img="/one/wsk.png"
+			    img="/one/nong.png"
 			    name="Nonga"
-			    role="大厂离职设计师 / 艺术创业者 / web3实践中"
+			    role="大厂离职设计师 / 艺术创业者 / 贴吧肠胃 / 大饼钻石手"
 			    description={
 			      <div>
 			        比特币钻石手，从10u持仓到现在，不关注币圈动态，只做btc信徒！最近入坑eth
