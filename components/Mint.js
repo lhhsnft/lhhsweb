@@ -290,7 +290,7 @@ function MintSection() {
 			      您可以铸造 {2 - numberMinted} 个，
 			    </span>
 			  )}
-				定价0.0066 E/只，最多mint两只。
+				定价0.0066Eth/只，最多mint两只。
 			</div>
     </div>
   );
