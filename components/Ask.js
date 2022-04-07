@@ -24,7 +24,7 @@ const QuestionList = styled.div`
 `;
 
 const askData = [
-	{title: "1、什么是LHH$ NFT？", content:"我们是来自贴吧时代的灵魂画手，我们开始探索web3的奥秘，CCO但有Roadmap."},
+	{title: "1、什么是LHH$ NFT？", content:"我们是来自贴吧时代的灵魂画手，我们开始探索web3的奥秘，CC0但有Roadmap."},
 	{title: "2、供应量和价格是多少？", content:"限量供应6666枚，每枚售价0.0066eth，每个钱包购买2枚，DYOR，请判断清楚后再决定是否购买"},
 	{title: "3、如果我不喜欢如何维权？", content:"这边建议您自己建立维权群，然后把创始人微信拉入群内，让大家一起来鞭尸"},
 	{title: "4、你们会扫地板吗？", content:"钝角"},
