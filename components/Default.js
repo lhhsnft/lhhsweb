@@ -189,13 +189,14 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		  comeing soon
+			  		  Coming soon
 			  		</Typography>
 					  <Typography
 			  		  variant="body1" 
 			  		  style={{
 			  			  fontSize: `13px`,
 			  			  fontWeight: 500,
+						  color: `#f90219`
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
@@ -207,6 +208,7 @@ function Default() {
 			  		  style={{
 			  			  fontSize: `16px`,
 			  			  fontWeight: 500,
+						  color: `#f90219`
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>

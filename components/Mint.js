@@ -283,7 +283,7 @@ function MintSection() {
       <div style={{ marginTop: 5, fontSize: 20, color: `#2f80ed`}}>
         {progress === null ? "" : `铸造进度：` + progress + `/ 6666`}
       </div>
-			<div style={{ marginTop: 20, fontSize: 15}}>
+			<div style={{ marginTop: 20, fontSize: 15, color: `#f90219`}}>
 			  {" "}
 			  {fullAddress && (
 			    <span>
