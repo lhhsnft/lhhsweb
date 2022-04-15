@@ -196,7 +196,7 @@ function Default() {
 			  		  style={{
 			  			  fontSize: `13px`,
 			  			  fontWeight: 500,
-						  color: `#f90219`
+						  color: `#000000`
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
@@ -208,7 +208,7 @@ function Default() {
 			  		  style={{
 			  			  fontSize: `16px`,
 			  			  fontWeight: 500,
-						  color: `#f90219`
+						  color: `#000000`
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
@@ -261,10 +261,10 @@ function Default() {
 			    <ListBoxHead>
 			  	  <ListBoxHeadMenu>
 						  <MenuWrapper>
-						    <MenuItem elementId="peek">SNEAK-PEEK</MenuItem>
-						    <MenuItem elementId="ask">Q&A</MenuItem>
-						    <MenuItem elementId="team">Team</MenuItem>
-								<MenuItem elementId="next">Roadmap</MenuItem>
+						    <MenuItem elementId="peek">无图言屌</MenuItem>
+						    <MenuItem elementId="ask">不明觉厉</MenuItem>
+						    <MenuItem elementId="team">兰州烧饼</MenuItem>
+								<MenuItem elementId="next">火钳刘明</MenuItem>
 						  </MenuWrapper>
 			  		</ListBoxHeadMenu>
 			  		<ListBoxHeadWallet>

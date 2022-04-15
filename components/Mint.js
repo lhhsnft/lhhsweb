@@ -66,7 +66,7 @@ function MintButton(props) {
           const response = await tx.wait();
           showMessage({
             type: "success",
-            title: "铸造成功",
+            title: "喜大普奔",
             body: (
               <div>
                 <a
@@ -91,7 +91,7 @@ function MintButton(props) {
         } catch (err) {
           showMessage({
             type: "error",
-            title: "铸造失败",
+            title: "请允悲，铸造失败",
             body: err.message,
           });
         }
@@ -229,7 +229,7 @@ function MintSection() {
           cursor: "not-allowed",
         }}
       ><MintIcon />
-        铸造已达上限
+        您挽尊过了！经拿滚！
       </StyledMintButton>
     );
   }
@@ -283,7 +283,7 @@ function MintSection() {
       <div style={{ marginTop: 5, fontSize: 20, color: `#2f80ed`}}>
         {progress === null ? "" : `铸造进度：` + progress + `/ 6666`}
       </div>
-			<div style={{ marginTop: 20, fontSize: 15, color: `#f90219`}}>
+			<div style={{ marginTop: 20, fontSize: 15, color: `#000000`}}>
 			  {" "}
 			  {fullAddress && (
 			    <span>

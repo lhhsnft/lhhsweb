@@ -25,11 +25,11 @@ const BoxList = styled.div`
 `;
 
 const askData = [
-	{title: "Q1季度", content:"经历了Q1季度nft市场的火热，我们也催生了一些大胆的想法，我们开始进入项目规划阶段（内心os：好想割一把）"},
-	{title: "Q2季度", content:"项目正式上线，4月开放mint，直到售完为止；同时开始筹划应付维权相关事宜。并且为了安抚维权群用户开始发放一些福利。"},
-	{title: "Q3季度", content:"如果顺利，夏季应该会给持有者一个不错的惊喜；同时元宇宙项目也会在7月左右上线，打金，挖矿？也许，大概，maybe都会有！"},
-	{title: "Q4季度", content:"大家都开始让我跑路，我们也开始思考是否跑路一走了之"}
-
+	{title: "火钳刘明", content:"mint开启之时官方discord正式开启"},
+	{title: "Mint-20%", content:"一份秘密制作的NFT作品作正式开始设计，全部用于持有者空投！预计6月底完成！"},
+	{title: "Mint-50%", content:"成立社区委员会，社区钱包多签，版税销售50%用于社区运营。"},
+	{title: "Mint-70%", content:"如果顺利，治理token？也许，大概，maybe会有！"},
+	{title: "Soldout", content:"干了这碗热翔！我们继续做家人！"}
 ];
 
 function Futrue() {
@@ -46,7 +46,7 @@ function Futrue() {
 			  	}} 
 			  	component="div" 
 			  	gutterBottom>
-			    Roadmap
+			    火钳刘明
 			  </Typography>
 			</BoxTitle>
 			<BoxContent>

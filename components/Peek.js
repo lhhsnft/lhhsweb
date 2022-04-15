@@ -49,7 +49,7 @@ function Peek() {
 			    }} 
 			  	component="div" 
 			  	gutterBottom>
-			    S N E A K - P E E K
+			    无图言屌
 			  </Typography>
 			</SnekTitle>
 			<SnekContent>

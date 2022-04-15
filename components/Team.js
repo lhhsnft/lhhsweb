@@ -93,7 +93,7 @@ function Team() {
 			    }} 
 			  	component="div" 
 			  	gutterBottom>
-			    T E A M
+			    兰州烧饼
 			  </Typography>
 			</BoxTitle>
 			<BoxContent>
@@ -101,16 +101,16 @@ function Team() {
 			    img="/one/dong.jpg"
 			    name="Judy Dong"
 			    role="项目发起人 / web3爱好者 / 非著名贴吧喷子 / 老韭菜一枚"
-			    description="你护我，我护你，who怕护！"
+			    description="年娇处，村通网，如今毁在web3。"
 			    twitterLink="https://twitter.com/mzbzcl"
 			  />
 			  <TeamMember
 			    img="/one/nong.png"
-			    name="Nonga"
+			    name="LiJufu"
 			    role="大厂离职设计师 / 艺术创业者 / 贴吧肠胃 / 大饼钻石手"
 			    description={
 			      <div>
-			        比特币钻石手，从10u持仓到现在，不关注币圈动态，只做btc信徒！最近入坑eth
+			        大饼钻石手，13年开始持仓，不关注币圈动态，只做btc信徒！有理有据，令人信服！
 			      </div>
 			    }
 			    twitterLink="https://twitter.com/lhhsnft"
