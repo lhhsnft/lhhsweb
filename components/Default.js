@@ -200,7 +200,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		   我们并不喜欢称呼自己为项目方，因为那不够亲切，我们希望通过这次能和大家成为一生的朋友；不，您是我们的再生父母！
+			  		   Mint一直爽，一直Mint一直爽！
 			  		</Typography>
 			  		<br/>
 					  <Typography
