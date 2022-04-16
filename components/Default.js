@@ -200,7 +200,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		   Mint一直爽，一直Mint一直爽！
+			  		   爱Crypto,爱web3，爱晚起，爱0.0066的LHHS，我不是什么蓝筹，我和你们一样，也是web3探索者！
 			  		</Typography>
 			  		<br/>
 					  <Typography
