@@ -194,7 +194,7 @@ function Default() {
 					  <Typography
 			  		  variant="body1" 
 			  		  style={{
-			  			  fontSize: `13px`,
+			  			  fontSize: `16px`,
 			  			  fontWeight: 500,
 						  color: `#000000`
 			  			}} 
@@ -206,7 +206,7 @@ function Default() {
 					  <Typography
 			  		  variant="body1" 
 			  		  style={{
-			  			  fontSize: `16px`,
+			  			  fontSize: `13px`,
 			  			  fontWeight: 500,
 						  color: `#000000`
 			  			}} 
