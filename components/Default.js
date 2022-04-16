@@ -200,7 +200,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		   爱Crypto,爱web3，爱晚起，爱0.0066的LHHS，我不是什么蓝筹，我和你们一样，也是web3探索者！
+			  		   爱Crypto,爱web3，也爱晚起，更爱0.0066的LHHS，我不是什么蓝筹，我和你们一样，也是web3探索者！
 			  		</Typography>
 			  		<br/>
 					  <Typography
