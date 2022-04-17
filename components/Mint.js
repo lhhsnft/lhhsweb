@@ -247,7 +247,7 @@ function MintSection() {
       </StyledMintButton>
     );
   }
-/*
+/*结束*/
   mintButton = (
     <StyledMintButton
       style={{
@@ -259,7 +259,7 @@ function MintSection() {
       coming soon
     </StyledMintButton>
   );
-	*/
+   /*结束end*/
 	let ButtonList = styled.div`
 	  margin-bottom: 20px;
 		display: flex;
