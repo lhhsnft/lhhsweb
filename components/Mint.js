@@ -25,8 +25,8 @@ const StyledMintButton = styled.div`
   display: inline-flex;
   margin-left: 20px;
   padding: 0 22px;
-  font-size: 16px;
-	border-radius: 16px;
+  font-size: 13px;
+	border-radius: 160px;
   color: #fff;
   font-weight: 700;
   height: 40px;
@@ -58,7 +58,7 @@ function MintButton(props) {
           const { signer, contract } = await connectWallet();
           const contractWithSigner = contract.connect(signer);
           const value = ethers.utils.parseEther(
-            props.mintAmount === 1 ? "0.0066" : "0.0132"
+            props.mintAmount === 1 ? "0.0066" : "0.033"
           );
           const tx = await contractWithSigner.mint(props.mintAmount, {
             value,
@@ -66,7 +66,7 @@ function MintButton(props) {
           const response = await tx.wait();
           showMessage({
             type: "success",
-            title: "喜大普奔",
+            title: "壮士，干了这碗热翔一起做家人！",
             body: (
               <div>
                 <a
@@ -199,7 +199,7 @@ function MintSection() {
         />
         <MintButton
           onMinted={refreshStatus}
-          mintAmount={2}
+          mintAmount={5}
           disabled={numberMinted === 1}
         />
       </div>
@@ -247,7 +247,7 @@ function MintSection() {
       </StyledMintButton>
     );
   }
-
+/*
   mintButton = (
     <StyledMintButton
       style={{
@@ -259,7 +259,7 @@ function MintSection() {
       coming soon
     </StyledMintButton>
   );
-	
+	*/
 	let ButtonList = styled.div`
 	  margin-bottom: 20px;
 		display: flex;
@@ -287,10 +287,10 @@ function MintSection() {
 			  {" "}
 			  {fullAddress && (
 			    <span>
-			      您可以铸造 {2 - numberMinted} 个，
+			      您可以铸造 {5 - numberMinted} 个，
 			    </span>
 			  )}
-				定价0.0066Eth/只，最多mint两只。
+				定价0.0066Eth/只，最多mint5只。
 			</div>
     </div>
   );
