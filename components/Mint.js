@@ -2,6 +2,16 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { ethers } from "ethers";
 import Typography from "@mui/material/Typography";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogTitle from '@mui/material/DialogTitle';
+import InputLabel from '@mui/material/InputLabel';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import { get, subscribe } from "../store";
 import Container from "./Container";
@@ -58,7 +68,7 @@ function MintButton(props) {
           const { signer, contract } = await connectWallet();
           const contractWithSigner = contract.connect(signer);
           const value = ethers.utils.parseEther(
-            props.mintAmount === 1 ? "0.0066" : "0.033"
+            (props.mintAmount * 0.0066).toString()
           );
           const tx = await contractWithSigner.mint(props.mintAmount, {
             value,
@@ -103,7 +113,8 @@ function MintButton(props) {
         ...props.style,
       }}
     >
-		  <MintIcon />
+			 {props.hiddenIcon ? null : <MintIcon />}
+			 {props.hiddenIcon ? '铸造 ' : null}
        {props.mintAmount} 个{minting ? "中.." : ""}
     </StyledMintButton>
   );
@@ -114,7 +125,9 @@ function MintSection() {
   const [progress, setProgress] = useState(null);
   const [fullAddress, setFullAddress] = useState(null);
   const [numberMinted, setNumberMinted] = useState(0);
-
+  const [showList, setShowList] = useState(false);
+	const [selectMint, setSelectMint] = useState(1);
+	
   async function updateStatus() {
     const { contract } = await connectWallet();
     const status = await contract.status();
@@ -172,6 +185,10 @@ function MintSection() {
     const numberMinted = await contract.numberMinted(fullAddress);
     setNumberMinted(parseInt(numberMinted));
   }
+	
+	async function showMintList(){
+		setShowList(!showList)
+	}
 
   let mintButton = (
     <StyledMintButton
@@ -184,25 +201,57 @@ function MintSection() {
       尚未开始
     </StyledMintButton>
   );
+	
+	function handleChange(event){
+		setSelectMint(Number(event.target.value) || '')
+	};
+
 
   if (status === "1") {
     mintButton = (
-      <div
-        style={{
-          display: "flex",
-        }}
-      >
-        <MintButton
-          onMinted={refreshStatus}
-          mintAmount={1}
-          style={{ marginRight: "20px" }}
-        />
-        <MintButton
-          onMinted={refreshStatus}
-          mintAmount={5}
-          disabled={numberMinted === 1}
-        />
-      </div>
+		  <div>
+		    <StyledMintButton onClick={showMintList}>
+		      <MintIcon />
+		      Start Mint
+		    </StyledMintButton>
+				<Dialog disableEscapeKeyDown open={showList} onClose={showMintList}>
+				   <DialogTitle>请选择铸造数量</DialogTitle>
+				   <DialogContent>
+				     <Box component="form" sx={{ display: 'flex', flexWrap: 'wrap' }}>
+				       <FormControl sx={{ m: 1, minWidth: 120 }}>
+				         <InputLabel htmlFor="demo-dialog-native">数量</InputLabel>
+				         <Select
+				           native
+				           value={selectMint}
+									 onChange={handleChange}
+				           input={<OutlinedInput label="数量" id="demo-dialog-native" />}
+				         >
+									 {[1,2,3,4,5,6,7,8,9,10].map((key)=>{
+										 if(key <= 10 - numberMinted){
+											 return (
+											   <option key={key} value={key}>{key}</option>
+											 );
+										 }else{
+											 return;
+										 }
+									 })}
+				         </Select>
+				       </FormControl>
+				     </Box>
+				   </DialogContent>
+				   <DialogActions>
+						 <MintButton hiddenIcon={true}
+						   style={{
+								 background: `#fff`,
+								 color: `#333`
+							 }}
+						   onClick={showMintList}
+						   onMinted={refreshStatus}
+							 mintAmount={selectMint}
+							/>
+				   </DialogActions>
+				 </Dialog>
+		  </div>
     );
   }
 
@@ -220,7 +269,7 @@ function MintSection() {
     );
   }
 
-  if (numberMinted === 2) {
+  if (numberMinted === 10) {
     mintButton = (
       <StyledMintButton
         style={{
@@ -247,7 +296,7 @@ function MintSection() {
       </StyledMintButton>
     );
   }
-/*结束*/
+/*
   mintButton = (
     <StyledMintButton
       style={{
@@ -259,7 +308,7 @@ function MintSection() {
       coming soon
     </StyledMintButton>
   );
-   /*结束end*/
+	*/
 	let ButtonList = styled.div`
 	  margin-bottom: 20px;
 		display: flex;
@@ -281,16 +330,16 @@ function MintSection() {
 				{mintButton}
       </ButtonList>
       <div style={{ marginTop: 5, fontSize: 20, color: `#2f80ed`}}>
-        {progress === null ? "" : `铸造进度：` + progress + `/ 6666`}
+        {progress === null ? "" : `铸造进度：` + progress + ` / 6666`}
       </div>
 			<div style={{ marginTop: 20, fontSize: 15, color: `#000000`}}>
 			  {" "}
 			  {fullAddress && (
 			    <span>
-			      您可以铸造 {5 - numberMinted} 个，
+			      您可以铸造 {10 - numberMinted} 个，
 			    </span>
 			  )}
-				定价0.0066Eth/只，最多mint5只。
+				定价0.0066Eth/只，最多mint10只。
 			</div>
     </div>
   );

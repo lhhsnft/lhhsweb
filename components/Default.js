@@ -48,10 +48,9 @@ const MintBox = styled.div`
   align-items: center;
   min-height: 100vh;
   height: fit-content;
-  background:url(/icons/backgrod.png) no-repeat;  top:0;
-  width:100%;
-  height:0%;
-  background-size:100% 100%;
+	top:0;
+	background: url('/icons/backgrod.png') no-repeat;
+	background-size: 100% auto;
 	@media screen and (max-width: 1200px) {
 		text-align: center;
 		position: relative;
