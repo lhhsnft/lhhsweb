@@ -296,7 +296,7 @@ function MintSection() {
       </StyledMintButton>
     );
   }
-/*
+/*coming soon*/
   mintButton = (
     <StyledMintButton
       style={{
@@ -308,7 +308,7 @@ function MintSection() {
       coming soon
     </StyledMintButton>
   );
-	*/
+	
 	let ButtonList = styled.div`
 	  margin-bottom: 20px;
 		display: flex;
