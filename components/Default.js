@@ -188,7 +188,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		  Coming soon
+			  		  用区块链的方式记录我们的互联网记忆
 			  		</Typography>
 					  <Typography
 			  		  variant="body1" 
