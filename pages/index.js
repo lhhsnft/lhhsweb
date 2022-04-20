@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>LHHS NFT - come soon！</title>
+        <title>LHHS NFT - 用区块链的方式记录我们的互联网记忆</title>
         <meta name="description" content="他们说：这世间没有什么事是不可能的，你们说呢？" />
         <link rel="icon" href="/favicon.png" />
 
