@@ -305,7 +305,7 @@ function MintSection() {
         cursor: "not-allowed",
       }}
     ><MintIcon />
-      coming soon
+      就在今天，即将发射
     </StyledMintButton>
   );
 	
