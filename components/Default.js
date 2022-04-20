@@ -225,7 +225,7 @@ function Default() {
 			  			gutterBottom>
 			  		 <Tooltip  title="官方 OpenSea">
 			  		    <a
-			  		      href="#"
+			  		      href="https://opensea.io/collection/lhhsnft"
 			  		      target="_blank"
 			  		      rel="noreferrer"
 			  		    >
