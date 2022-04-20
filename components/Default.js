@@ -223,7 +223,7 @@ function Default() {
 			  			}} 
 			  			component="div" 
 			  			gutterBottom>
-			  		 <Tooltip title="官方 OpenSea">
+			  		 <Tooltip  title="官方 OpenSea">
 			  		    <a
 			  		      href="#"
 			  		      target="_blank"
@@ -239,7 +239,8 @@ function Default() {
 			  		      />
 			  		    </a>
 			  		  </Tooltip>
-			  		  <Tooltip title="官方 Twitter">
+						
+						<Tooltip title="官方 twitter">
 			  		    <a
 			  		      href="https://twitter.com/lhhsnft"
 			  		      target="_blank"
@@ -247,9 +248,27 @@ function Default() {
 			  		    >
 			  		      <img
 			  		        style={{
+			  		          cursor: "pointer",
 			  		          width: 24,
+			  		          marginRight: "40px",
 			  		        }}
 			  		        src="/icons/twitter.svg"
+			  		      />
+			  		    </a>
+			  		  </Tooltip>
+						<Tooltip title="官方 Discord">
+			  		    <a
+			  		      href="#"
+			  		      target="_blank"
+			  		      rel="noreferrer"
+			  		    >
+			  		      <img
+			  		        style={{
+			  		          cursor: "pointer",
+			  		          width: 24,
+			  		          marginRight: "40px",
+			  		        }}
+			  		        src="/icons/discord.svg"
 			  		      />
 			  		    </a>
 			  		  </Tooltip>
