@@ -258,7 +258,7 @@ function Default() {
 			  		  </Tooltip>
 						<Tooltip title="官方 Discord">
 			  		    <a
-			  		      href="#"
+			  		      href="https://discord.gg/B8VUtKbE"
 			  		      target="_blank"
 			  		      rel="noreferrer"
 			  		    >
