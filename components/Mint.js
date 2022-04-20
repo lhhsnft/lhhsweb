@@ -296,7 +296,7 @@ function MintSection() {
       </StyledMintButton>
     );
   }
-/*coming soon*/
+/*
   mintButton = (
     <StyledMintButton
       style={{
@@ -308,7 +308,7 @@ function MintSection() {
       就在今天，即将发射
     </StyledMintButton>
   );
-	
+	*/
 	let ButtonList = styled.div`
 	  margin-bottom: 20px;
 		display: flex;
