@@ -12,7 +12,7 @@ const Snek = styled.div`
 function Peek() {
 	return(
 	  <Snek id="peek">
-		  <img style={{width: `100%`}} src="/images/peek.jpeg" />
+		  <img style={{width: `100%`}} src="/images/peek.jpg" />
 		</Snek>
 	);
 }
